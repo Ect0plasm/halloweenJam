@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6j0213vnaolv"
-path="res://.godot/imported/Trick.png-60fc3d58d0489cb15d54a1187e9e8c50.ctex"
+uid="uid://cl2f2y3jy22ld"
+path="res://.godot/imported/bg.png-97ab775e70e5c86bc7673d60b12b291d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Trick.png"
-dest_files=["res://.godot/imported/Trick.png-60fc3d58d0489cb15d54a1187e9e8c50.ctex"]
+source_file="res://Assets/Sprites/bg.png"
+dest_files=["res://.godot/imported/bg.png-97ab775e70e5c86bc7673d60b12b291d.ctex"]
 
 [params]
 

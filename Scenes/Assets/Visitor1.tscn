@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://dnsa577lq8pkm"]
-
-[ext_resource type="Texture2D" uid="uid://chx75ur7t51va" path="res://visitor1t.png" id="1_t27fx"]
-[ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scenes/Assets/visitorProperties.gd" id="2_rn1qu"]
-
-[node name="Visitor1" type="Sprite2D"]
-texture = ExtResource("1_t27fx")
-script = ExtResource("2_rn1qu")
-trick = true

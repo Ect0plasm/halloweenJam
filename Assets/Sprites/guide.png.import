@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccis8pylpta65"
-path="res://.godot/imported/closeDoor.png-2b7c05efcc211e2f3cb8eda4f07b360e.ctex"
+uid="uid://y58rtd0uku02"
+path="res://.godot/imported/guide.png-9246c95a3e4db7ef5fd6d5e7f069b07d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://closeDoor.png"
-dest_files=["res://.godot/imported/closeDoor.png-2b7c05efcc211e2f3cb8eda4f07b360e.ctex"]
+source_file="res://Assets/Sprites/guide.png"
+dest_files=["res://.godot/imported/guide.png-9246c95a3e4db7ef5fd6d5e7f069b07d.ctex"]
 
 [params]
 

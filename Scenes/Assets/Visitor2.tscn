@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://iuewd0smbntr"]
-
-[ext_resource type="Texture2D" uid="uid://bbp22vvn0sc3b" path="res://visito2t.png" id="1_o1sws"]
-[ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scenes/Assets/visitorProperties.gd" id="2_olwkb"]
-
-[node name="Visitor2" type="Sprite2D"]
-texture = ExtResource("1_o1sws")
-script = ExtResource("2_olwkb")
-treat = true
