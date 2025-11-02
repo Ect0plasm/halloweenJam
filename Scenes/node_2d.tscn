@@ -1,9 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://cxm1y0g8khuxs"]
+[gd_scene load_steps=16 format=3 uid="uid://cxm1y0g8khuxs"]
 
 [ext_resource type="Texture2D" uid="uid://df7rpf2igpur1" path="res://Assets/Sprites/Bg/DoorClosed.png" id="1_p20hg"]
 [ext_resource type="Script" uid="uid://ctt35qcba1w8y" path="res://Scripts/visitors.gd" id="2_wjtap"]
+[ext_resource type="PackedScene" uid="uid://cruboyatfxt3p" path="res://Scenes/Presets/deep.tscn" id="3_c32x4"]
 [ext_resource type="Texture2D" uid="uid://d2xhvdsq4bclk" path="res://Assets/Sprites/candy/corn.png" id="3_v7gqg"]
 [ext_resource type="Texture2D" uid="uid://cjakgfkbnmqqa" path="res://Assets/Sprites/candy/fungus.png" id="4_chwn1"]
+[ext_resource type="PackedScene" uid="uid://dnsa577lq8pkm" path="res://Scenes/Presets/ogre.tscn" id="4_fg7i4"]
+[ext_resource type="PackedScene" uid="uid://knmhmr1y4dfl" path="res://Scenes/Presets/basajaun.tscn" id="5_gwne5"]
 [ext_resource type="Texture2D" uid="uid://y58rtd0uku02" path="res://Assets/Sprites/guide.png" id="6_tx0tn"]
 [ext_resource type="Texture2D" uid="uid://djt33rvsfhamr" path="res://Assets/Sprites/candy/bar.png" id="7_p20hg"]
 [ext_resource type="Script" uid="uid://b7jr2dbtnsa8d" path="res://Scripts/guide.gd" id="7_wjtap"]
@@ -21,11 +24,9 @@ texture = ExtResource("1_p20hg")
 
 [node name="GameController" type="Node" parent="." node_paths=PackedStringArray("door")]
 script = ExtResource("2_wjtap")
-door = NodePath("../CloseDoor")
-mean = 2.0
-deviation = 0.25
-move_speed = 2.0
 initial_position = Vector2(320, 95)
+door = NodePath("../CloseDoor")
+visitors = Array[PackedScene]([ExtResource("3_c32x4"), ExtResource("4_fg7i4"), ExtResource("5_gwne5")])
 
 [node name="Candy" type="Node" parent="."]
 
