@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6j0213vnaolv"
-path="res://.godot/imported/Trick.png-466959f3f14d1752a5c258a844661b01.ctex"
+uid="uid://de3gkssvx401c"
+path="res://.godot/imported/satyr.png-4a7711543b3a3afa85297727a1d2a6b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Trick.png"
-dest_files=["res://.godot/imported/Trick.png-466959f3f14d1752a5c258a844661b01.ctex"]
+source_file="res://Assets/Sprites/visitors/satyr.png"
+dest_files=["res://.godot/imported/satyr.png-4a7711543b3a3afa85297727a1d2a6b3.ctex"]
 
 [params]
 

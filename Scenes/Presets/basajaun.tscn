@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://knmhmr1y4dfl"]
+
+[ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scripts/visitorProperties.gd" id="1_pdpuo"]
+[ext_resource type="Texture2D" uid="uid://dr7fd44dferq3" path="res://Assets/Sprites/basajaun.png" id="1_wtoba"]
+
+[node name="basajaun" type="Sprite2D"]
+texture = ExtResource("1_wtoba")
+script = ExtResource("1_pdpuo")
+desired_candy = "Fungus"

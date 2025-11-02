@@ -1,2 +1,2 @@
 extends Sprite2D
-@export var trick:bool
+@export_enum("Fungus", "Skull", "Cookie", "Fish", "Corn", "Bar") var desired_candy: String

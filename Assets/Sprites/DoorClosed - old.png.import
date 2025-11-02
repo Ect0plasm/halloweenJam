@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbp22vvn0sc3b"
-path="res://.godot/imported/visito2t.png-416c422d6487179905b38f2f6e54f95d.ctex"
+uid="uid://bn0jdnovqjt2y"
+path="res://.godot/imported/DoorClosed - old.png-1fb82d0e83edf6cd556ddcce52c347c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/visito2t.png"
-dest_files=["res://.godot/imported/visito2t.png-416c422d6487179905b38f2f6e54f95d.ctex"]
+source_file="res://Assets/Sprites/DoorClosed - old.png"
+dest_files=["res://.godot/imported/DoorClosed - old.png-1fb82d0e83edf6cd556ddcce52c347c4.ctex"]
 
 [params]
 
