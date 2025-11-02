@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn0jdnovqjt2y"
-path="res://.godot/imported/DoorClosed - old.png-1fb82d0e83edf6cd556ddcce52c347c4.ctex"
+uid="uid://dltdnrgyc4tov"
+path="res://.godot/imported/bagman.png-f6223f894488c1b16f04c0012fa678e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/DoorClosed - old.png"
-dest_files=["res://.godot/imported/DoorClosed - old.png-1fb82d0e83edf6cd556ddcce52c347c4.ctex"]
+source_file="res://Assets/Sprites/visitors/bagman.png"
+dest_files=["res://.godot/imported/bagman.png-f6223f894488c1b16f04c0012fa678e2.ctex"]
 
 [params]
 

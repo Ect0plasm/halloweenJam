@@ -1,44 +1,31 @@
-[gd_scene load_steps=12 format=3 uid="uid://cxm1y0g8khuxs"]
+[gd_scene load_steps=13 format=3 uid="uid://cxm1y0g8khuxs"]
 
-[ext_resource type="Texture2D" uid="uid://df7rpf2igpur1" path="res://Assets/Sprites/DoorClosed.png" id="1_wjtap"]
+[ext_resource type="Texture2D" uid="uid://df7rpf2igpur1" path="res://Assets/Sprites/Bg/DoorClosed.png" id="1_p20hg"]
 [ext_resource type="Script" uid="uid://ctt35qcba1w8y" path="res://Scripts/visitors.gd" id="2_wjtap"]
 [ext_resource type="Texture2D" uid="uid://d2xhvdsq4bclk" path="res://Assets/Sprites/candy/corn.png" id="3_v7gqg"]
 [ext_resource type="Texture2D" uid="uid://cjakgfkbnmqqa" path="res://Assets/Sprites/candy/fungus.png" id="4_chwn1"]
 [ext_resource type="Texture2D" uid="uid://y58rtd0uku02" path="res://Assets/Sprites/guide.png" id="6_tx0tn"]
-[ext_resource type="Texture2D" uid="uid://cl2f2y3jy22ld" path="res://Assets/Sprites/bg.png" id="7_hvaui"]
 [ext_resource type="Texture2D" uid="uid://djt33rvsfhamr" path="res://Assets/Sprites/candy/bar.png" id="7_p20hg"]
 [ext_resource type="Script" uid="uid://b7jr2dbtnsa8d" path="res://Scripts/guide.gd" id="7_wjtap"]
 [ext_resource type="Texture2D" uid="uid://vsoc01aohi75" path="res://Assets/Sprites/candy/cookie.png" id="8_he4j0"]
 [ext_resource type="Texture2D" uid="uid://c1y8l2dy06068" path="res://Assets/Sprites/candy/fish.png" id="10_85gyg"]
+[ext_resource type="Texture2D" uid="uid://77yb0cfugvrc" path="res://Assets/Sprites/Bg/bg.png" id="11_he4j0"]
+[ext_resource type="Texture2D" uid="uid://bmerh5yk0lu1v" path="res://Assets/Sprites/Bg/fg.png" id="12_85gyg"]
 [ext_resource type="Texture2D" uid="uid://dl3e45uyla41f" path="res://Assets/Sprites/candy/skull.png" id="12_c32x4"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="CloseDoor" type="Sprite2D" parent="."]
-position = Vector2(67, 94)
-texture = ExtResource("1_wjtap")
+position = Vector2(66, 95)
+texture = ExtResource("1_p20hg")
 
 [node name="GameController" type="Node" parent="." node_paths=PackedStringArray("door")]
 script = ExtResource("2_wjtap")
 door = NodePath("../CloseDoor")
-mean = 1.5
-deviation = 0.4
-
-[node name="Guide" type="TextureButton" parent="."]
-offset_left = 300.0
-offset_right = 470.0
-offset_bottom = 300.0
-texture_normal = ExtResource("6_tx0tn")
-script = ExtResource("7_wjtap")
-closed = Vector2(302, 0)
-open = Vector2(200, 0)
-speed = 0.2
-
-[node name="Background" type="Sprite2D" parent="."]
-z_index = -100
-position = Vector2(160, 90)
-texture = ExtResource("7_hvaui")
-metadata/_edit_lock_ = true
+mean = 2.0
+deviation = 0.25
+move_speed = 2.0
+initial_position = Vector2(320, 95)
 
 [node name="Candy" type="Node" parent="."]
 
@@ -84,10 +71,35 @@ offset_right = 308.0
 offset_bottom = 224.0
 texture_normal = ExtResource("12_c32x4")
 
-[connection signal="pressed" from="Guide" to="Guide" method="_on_pressed"]
+[node name="Background" type="Node" parent="."]
+
+[node name="bg" type="Sprite2D" parent="Background"]
+z_index = -100
+position = Vector2(160, 90)
+texture = ExtResource("11_he4j0")
+metadata/_edit_lock_ = true
+
+[node name="fg" type="Sprite2D" parent="Background"]
+z_index = -50
+position = Vector2(160, 90)
+texture = ExtResource("12_85gyg")
+metadata/_edit_lock_ = true
+
+[node name="Guide" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 300.0
+offset_right = 470.0
+offset_bottom = 300.0
+texture_normal = ExtResource("6_tx0tn")
+script = ExtResource("7_wjtap")
+closed = Vector2(302, 0)
+open = Vector2(200, 0)
+speed = 0.2
+
 [connection signal="pressed" from="Candy/Bar" to="GameController" method="button_pressed" binds= ["Fish"]]
 [connection signal="pressed" from="Candy/Cookie" to="GameController" method="button_pressed" binds= ["Cookie"]]
 [connection signal="pressed" from="Candy/Corn" to="GameController" method="button_pressed" binds= ["Corn"]]
 [connection signal="pressed" from="Candy/Fish" to="GameController" method="button_pressed" binds= ["Fish"]]
 [connection signal="pressed" from="Candy/Fungus" to="GameController" method="button_pressed" binds= ["Fungus"]]
 [connection signal="pressed" from="Candy/Skull" to="GameController" method="button_pressed" binds= ["Skull"]]
+[connection signal="pressed" from="Guide" to="Guide" method="_on_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://f0t4ikist1yf"
-path="res://.godot/imported/DoorFrame.png-ae801514369775ccf9bd95fef68b5649.ctex"
+uid="uid://mfjimlxn0fwn"
+path="res://.godot/imported/Frank.png-c8286b5ef565be1f93cd3ef521b30161.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/DoorFrame.png"
-dest_files=["res://.godot/imported/DoorFrame.png-ae801514369775ccf9bd95fef68b5649.ctex"]
+source_file="res://Assets/Sprites/visitors/Frank.png"
+dest_files=["res://.godot/imported/Frank.png-c8286b5ef565be1f93cd3ef521b30161.ctex"]
 
 [params]
 
