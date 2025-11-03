@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcrfw7fguf0hq"
-path="res://.godot/imported/blemmyes.png-2e88d08fef9300fc721004e66611ca56.ctex"
+uid="uid://c8xu10n1jxiof"
+path="res://.godot/imported/human_cowboy.png-bbb62f384d2b870929a7dcd40a719d27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/visitors/blemmyes.png"
-dest_files=["res://.godot/imported/blemmyes.png-2e88d08fef9300fc721004e66611ca56.ctex"]
+source_file="res://Assets/Sprites/visitors/human_cowboy.png"
+dest_files=["res://.godot/imported/human_cowboy.png-bbb62f384d2b870929a7dcd40a719d27.ctex"]
 
 [params]
 

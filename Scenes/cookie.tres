@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://2k3qceim6scv"]
+
+[ext_resource type="Texture2D" uid="uid://1qcsg4w0va3d" path="res://Assets/Sprites/candy/Eyes.png" id="1_iufui"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xgwf"]
+atlas = ExtResource("1_iufui")
+region = Rect2(192, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsil1"]
+atlas = ExtResource("1_iufui")
+region = Rect2(128, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0l7w"]
+atlas = ExtResource("1_iufui")
+region = Rect2(64, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3p504"]
+atlas = ExtResource("1_iufui")
+region = Rect2(0, 0, 64, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xgwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsil1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0l7w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3p504")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

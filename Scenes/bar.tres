@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://d36lgc2itrt5g"]
+
+[ext_resource type="Texture2D" uid="uid://derngwbesejly" path="res://Assets/Sprites/candy/Chocolate.png" id="1_gvkhj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7dva"]
+atlas = ExtResource("1_gvkhj")
+region = Rect2(273, 0, 39, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hy3b3"]
+atlas = ExtResource("1_gvkhj")
+region = Rect2(234, 0, 39, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsyk1"]
+atlas = ExtResource("1_gvkhj")
+region = Rect2(195, 0, 39, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3b3h3"]
+atlas = ExtResource("1_gvkhj")
+region = Rect2(156, 0, 39, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dm5up"]
+atlas = ExtResource("1_gvkhj")
+region = Rect2(117, 0, 39, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o74yp"]
+atlas = ExtResource("1_gvkhj")
+region = Rect2(78, 0, 39, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1skug"]
+atlas = ExtResource("1_gvkhj")
+region = Rect2(39, 0, 39, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmlg8"]
+atlas = ExtResource("1_gvkhj")
+region = Rect2(0, 0, 39, 24)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7dva")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hy3b3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsyk1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3b3h3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dm5up")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o74yp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1skug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmlg8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

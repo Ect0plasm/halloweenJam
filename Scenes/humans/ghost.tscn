@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2w73htm43ass"]
+
+[ext_resource type="Texture2D" uid="uid://djc7ob61fho5l" path="res://Assets/Sprites/visitors/human_ghost.png" id="1_4uhf2"]
+[ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scripts/visitorProperties.gd" id="2_igjo7"]
+
+[node name="ghost" type="Sprite2D"]
+texture = ExtResource("1_4uhf2")
+script = ExtResource("2_igjo7")
+desired_candy = Array[String](["Cookie", "Corn", "Bar", "Juice"])

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scripts/visitorProperties.gd" id="1_pdpuo"]
 [ext_resource type="Texture2D" uid="uid://dltdnrgyc4tov" path="res://Assets/Sprites/visitors/bagman.png" id="1_wtoba"]
 
-[node name="basajaun" type="Sprite2D"]
+[node name="bagman" type="Sprite2D"]
 texture = ExtResource("1_wtoba")
 script = ExtResource("1_pdpuo")
-desired_candy = "Fungus"
+desired_candy = Array[String](["Fungus", "Juice"])

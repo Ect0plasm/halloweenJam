@@ -1,9 +1,10 @@
 [gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://b3b6glxvjc7qk"]
 
-[ext_resource type="Texture2D" uid="uid://btdka54a86tsk" path="res://Assets/Sprites/Bg/clock.png" id="1_leuc8"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r8pas"]
+load_path = "res://.godot/imported/clock.png-0d968fedc7b8f968086d10d80cc8bbc9.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y4jxp"]
-atlas = ExtResource("1_leuc8")
+atlas = SubResource("CompressedTexture2D_r8pas")
 region = Rect2(0, 0, 29, 15)
 
 [resource]

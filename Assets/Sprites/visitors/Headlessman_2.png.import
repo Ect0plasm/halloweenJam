@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dr7fd44dferq3"
-path="res://.godot/imported/basajaun.png-a26ecd2b2b3599990074b9194003fd6c.ctex"
+uid="uid://dta487dkdhotv"
+path="res://.godot/imported/Headlessman_2.png-809826225059b952f21cec45dbe4f21a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/visitors/basajaun.png"
-dest_files=["res://.godot/imported/basajaun.png-a26ecd2b2b3599990074b9194003fd6c.ctex"]
+source_file="res://Assets/Sprites/visitors/Headlessman_2.png"
+dest_files=["res://.godot/imported/Headlessman_2.png-809826225059b952f21cec45dbe4f21a.ctex"]
 
 [params]
 

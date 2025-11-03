@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4xw5884cx560"
-path="res://.godot/imported/ogre.png-99f85620131b9287a33558cd1621277f.ctex"
+uid="uid://derngwbesejly"
+path="res://.godot/imported/Chocolate.png-396dd93043f1b32c97c1be781fffd0b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/visitors/ogre.png"
-dest_files=["res://.godot/imported/ogre.png-99f85620131b9287a33558cd1621277f.ctex"]
+source_file="res://Assets/Sprites/candy/Chocolate.png"
+dest_files=["res://.godot/imported/Chocolate.png-396dd93043f1b32c97c1be781fffd0b5.ctex"]
 
 [params]
 

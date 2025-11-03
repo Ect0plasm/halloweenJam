@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de3gkssvx401c"
-path="res://.godot/imported/satyr.png-4a7711543b3a3afa85297727a1d2a6b3.ctex"
+uid="uid://db4wsb2p0id68"
+path="res://.godot/imported/Headlessman.png-4aa8b9f53e1987133bfc82b1fc7a6c2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/visitors/satyr.png"
-dest_files=["res://.godot/imported/satyr.png-4a7711543b3a3afa85297727a1d2a6b3.ctex"]
+source_file="res://Assets/Sprites/visitors/Headlessman.png"
+dest_files=["res://.godot/imported/Headlessman.png-4aa8b9f53e1987133bfc82b1fc7a6c2f.ctex"]
 
 [params]
 

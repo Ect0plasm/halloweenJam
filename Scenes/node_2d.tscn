@@ -1,32 +1,32 @@
-[gd_scene load_steps=22 format=3 uid="uid://cxm1y0g8khuxs"]
+[gd_scene load_steps=27 format=3 uid="uid://cxm1y0g8khuxs"]
 
 [ext_resource type="SpriteFrames" uid="uid://dkufb37dq7glr" path="res://Scenes/Door.tres" id="1_c32x4"]
 [ext_resource type="Script" uid="uid://bxu142txm31la" path="res://Scripts/door.gd" id="2_fg7i4"]
 [ext_resource type="Script" uid="uid://ctt35qcba1w8y" path="res://Scripts/visitors.gd" id="2_wjtap"]
-[ext_resource type="PackedScene" uid="uid://cruboyatfxt3p" path="res://Scenes/Presets/deep.tscn" id="3_c32x4"]
+[ext_resource type="PackedScene" uid="uid://cruboyatfxt3p" path="res://Scenes/monsters/slime.tscn" id="3_c32x4"]
 [ext_resource type="Texture2D" uid="uid://d2xhvdsq4bclk" path="res://Assets/Sprites/candy/corn.png" id="3_v7gqg"]
-[ext_resource type="PackedScene" uid="uid://dnsa577lq8pkm" path="res://Scenes/Presets/ogre.tscn" id="4_fg7i4"]
-[ext_resource type="PackedScene" uid="uid://knmhmr1y4dfl" path="res://Scenes/Presets/basajaun.tscn" id="5_gwne5"]
+[ext_resource type="PackedScene" uid="uid://dnsa577lq8pkm" path="res://Scenes/monsters/frank.tscn" id="4_fg7i4"]
+[ext_resource type="PackedScene" uid="uid://bs0wiq878owlr" path="res://Scenes/humans/cowboy.tscn" id="4_jiy1d"]
+[ext_resource type="SpriteFrames" uid="uid://dq4qn6y7btexy" path="res://Scenes/fish.tres" id="5_2ooml"]
+[ext_resource type="PackedScene" uid="uid://knmhmr1y4dfl" path="res://Scenes/monsters/bagman.tscn" id="5_gwne5"]
+[ext_resource type="SpriteFrames" uid="uid://d36lgc2itrt5g" path="res://Scenes/bar.tres" id="5_he4j0"]
+[ext_resource type="PackedScene" uid="uid://b2w73htm43ass" path="res://Scenes/humans/ghost.tscn" id="5_ud1os"]
+[ext_resource type="SpriteFrames" uid="uid://2k3qceim6scv" path="res://Scenes/cookie.tres" id="6_85gyg"]
+[ext_resource type="PackedScene" uid="uid://bpdpyt6grpyr4" path="res://Scenes/humans/witch.tscn" id="6_fpmp2"]
 [ext_resource type="Texture2D" uid="uid://y58rtd0uku02" path="res://Assets/Sprites/guide.png" id="6_tx0tn"]
-[ext_resource type="Texture2D" uid="uid://djt33rvsfhamr" path="res://Assets/Sprites/candy/bar.png" id="7_p20hg"]
 [ext_resource type="Script" uid="uid://b7jr2dbtnsa8d" path="res://Scripts/guide.gd" id="7_wjtap"]
-[ext_resource type="Script" uid="uid://v48w6c5gchjp" path="res://Scripts/fungus.gd" id="9_c32x4"]
-[ext_resource type="Texture2D" uid="uid://c1y8l2dy06068" path="res://Assets/Sprites/candy/fish.png" id="10_85gyg"]
+[ext_resource type="PackedScene" uid="uid://iuewd0smbntr" path="res://Scenes/monsters/skeleton.tscn" id="8_1nvmp"]
+[ext_resource type="SpriteFrames" uid="uid://cnrwc22l0dx7f" path="res://Scenes/mushroom.tres" id="8_85gyg"]
+[ext_resource type="Script" uid="uid://dr5ysng0djau" path="res://Scripts/candy.gd" id="8_fg7i4"]
+[ext_resource type="PackedScene" uid="uid://rl8wsc00buyq" path="res://Scenes/monsters/cyclops.tscn" id="8_xiv05"]
+[ext_resource type="PackedScene" uid="uid://pgam4w6maiou" path="res://Scenes/monsters/headlessman.tscn" id="10_uybdb"]
 [ext_resource type="Texture2D" uid="uid://77yb0cfugvrc" path="res://Assets/Sprites/Bg/bg.png" id="11_he4j0"]
 [ext_resource type="Texture2D" uid="uid://bmerh5yk0lu1v" path="res://Assets/Sprites/Bg/fg.png" id="12_85gyg"]
-[ext_resource type="Texture2D" uid="uid://dl3e45uyla41f" path="res://Assets/Sprites/candy/skull.png" id="12_c32x4"]
-[ext_resource type="Texture2D" uid="uid://brn3nv5c4jp3o" path="res://Assets/Sprites/Bg/fg_normal.png" id="14_hpu6p"]
+[ext_resource type="PackedScene" uid="uid://ce3sepq6i856v" path="res://Scenes/monsters/vampire.tscn" id="13_uh8xd"]
 [ext_resource type="SpriteFrames" uid="uid://b3b6glxvjc7qk" path="res://Scenes/Clock.tres" id="16_fg7i4"]
 [ext_resource type="Script" uid="uid://ctose8nyl23kx" path="res://Scripts/clock.gd" id="17_gwne5"]
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_85gyg"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_hpu6p"]
-diffuse_texture = ExtResource("11_he4j0")
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_op2xg"]
-diffuse_texture = ExtResource("12_85gyg")
-normal_texture = ExtResource("14_hpu6p")
 
 [node name="Node2D" type="Node2D"]
 
@@ -38,65 +38,71 @@ script = ExtResource("2_fg7i4")
 [node name="GameController" type="Node" parent="."]
 script = ExtResource("2_wjtap")
 initial_position = Vector2(320, 95)
-visitors = Array[PackedScene]([ExtResource("3_c32x4"), ExtResource("4_fg7i4"), ExtResource("5_gwne5")])
+humans = Array[PackedScene]([ExtResource("4_jiy1d"), ExtResource("5_ud1os"), ExtResource("6_fpmp2")])
+monsters = Array[PackedScene]([ExtResource("5_gwne5"), ExtResource("8_xiv05"), ExtResource("4_fg7i4"), ExtResource("10_uybdb"), ExtResource("8_1nvmp"), ExtResource("3_c32x4"), ExtResource("13_uh8xd")])
 
 [node name="Candy" type="Node" parent="."]
 
 [node name="Bar" type="TextureButton" parent="Candy"]
-offset_left = 142.0
-offset_top = -15.0
-offset_right = 228.0
-offset_bottom = 47.0
-texture_normal = ExtResource("7_p20hg")
+offset_left = 182.0
+offset_top = 117.0
+offset_right = 214.0
+offset_bottom = 149.0
+script = ExtResource("8_fg7i4")
+initial_count = 7
+candy = "Bar"
+texture = ExtResource("5_he4j0")
 
 [node name="Cookie" type="TextureButton" parent="Candy"]
 offset_left = 257.0
 offset_top = -27.0
 offset_right = 321.0
-offset_bottom = 47.0
+offset_bottom = 5.0
 texture_normal = SubResource("AnimatedTexture_85gyg")
+script = ExtResource("8_fg7i4")
+initial_count = 3
+candy = "Cookie"
+texture = ExtResource("6_85gyg")
 
 [node name="Corn" type="TextureButton" parent="Candy"]
-offset_left = 150.0
-offset_top = 50.0
-offset_right = 224.0
-offset_bottom = 126.0
+offset_left = 130.0
+offset_top = 106.0
+offset_right = 194.0
+offset_bottom = 138.0
 texture_normal = ExtResource("3_v7gqg")
 
 [node name="Fish" type="TextureButton" parent="Candy"]
-offset_left = 240.0
-offset_top = 52.0
-offset_right = 321.0
-offset_bottom = 118.0
-texture_normal = ExtResource("10_85gyg")
+offset_left = 286.0
+offset_top = 55.0
+offset_right = 318.0
+offset_bottom = 87.0
+script = ExtResource("8_fg7i4")
+initial_count = 1
+candy = "Fish"
+texture = ExtResource("5_2ooml")
 
 [node name="Fungus" type="TextureButton" parent="Candy"]
 offset_left = 209.0
 offset_top = 112.0
 offset_right = 273.0
 offset_bottom = 144.0
-script = ExtResource("9_c32x4")
-
-[node name="Skull" type="TextureButton" parent="Candy"]
-visible = false
-offset_left = 241.0
-offset_top = 129.0
-offset_right = 314.0
-offset_bottom = 219.0
-texture_normal = ExtResource("12_c32x4")
+script = ExtResource("8_fg7i4")
+initial_count = 3
+candy = "Fungus"
+texture = ExtResource("8_85gyg")
 
 [node name="Background" type="Node" parent="."]
 
 [node name="bg" type="Sprite2D" parent="Background"]
 z_index = -100
 position = Vector2(160, 90)
-texture = SubResource("CanvasTexture_hpu6p")
+texture = ExtResource("11_he4j0")
 metadata/_edit_lock_ = true
 
 [node name="fg" type="Sprite2D" parent="Background"]
 z_index = -50
 position = Vector2(160, 90)
-texture = SubResource("CanvasTexture_op2xg")
+texture = ExtResource("12_85gyg")
 metadata/_edit_lock_ = true
 
 [node name="Guide" type="TextureButton" parent="."]
@@ -121,11 +127,12 @@ color = Color(0.54554445, 0.5601218, 0.52142555, 1)
 
 [connection signal="door_state" from="GameController" to="Door" method="door_state"]
 [connection signal="visit" from="GameController" to="Clock" method="_update"]
-[connection signal="pressed" from="Candy/Bar" to="GameController" method="button_pressed" binds= ["Fish"]]
+[connection signal="press" from="Candy/Bar" to="GameController" method="button_pressed"]
+[connection signal="pressed" from="Candy/Bar" to="Candy/Bar" method="_on_pressed"]
 [connection signal="pressed" from="Candy/Cookie" to="GameController" method="button_pressed" binds= ["Cookie"]]
 [connection signal="pressed" from="Candy/Corn" to="GameController" method="button_pressed" binds= ["Corn"]]
-[connection signal="pressed" from="Candy/Fish" to="GameController" method="button_pressed" binds= ["Fish"]]
+[connection signal="press" from="Candy/Fish" to="GameController" method="button_pressed"]
+[connection signal="pressed" from="Candy/Fish" to="Candy/Fish" method="_on_pressed"]
 [connection signal="press" from="Candy/Fungus" to="GameController" method="button_pressed"]
 [connection signal="pressed" from="Candy/Fungus" to="Candy/Fungus" method="_on_pressed"]
-[connection signal="pressed" from="Candy/Skull" to="GameController" method="button_pressed" binds= ["Skull"]]
 [connection signal="pressed" from="Guide" to="Guide" method="_on_pressed"]

@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://rr3w53ujrxy5"]
-
-[ext_resource type="Texture2D" uid="uid://bcrfw7fguf0hq" path="res://Assets/Sprites/blemmyes.png" id="1_2hvni"]
-[ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scripts/visitorProperties.gd" id="1_5r326"]
-
-[node name="blemmyes" type="Sprite2D"]
-texture = ExtResource("1_2hvni")
-script = ExtResource("1_5r326")
-desired_candy = "Skull"

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl3e45uyla41f"
-path="res://.godot/imported/skull.png-f3b783dcde625ab621136181c9d22b2b.ctex"
+uid="uid://crwgbrhynqv04"
+path="res://.godot/imported/vampire.png-f18b05f8a798973a57fc08cd005bfbde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/candy/skull.png"
-dest_files=["res://.godot/imported/skull.png-f3b783dcde625ab621136181c9d22b2b.ctex"]
+source_file="res://Assets/Sprites/visitors/vampire.png"
+dest_files=["res://.godot/imported/vampire.png-f18b05f8a798973a57fc08cd005bfbde.ctex"]
 
 [params]
 
