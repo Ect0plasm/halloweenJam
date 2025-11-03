@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1qcsg4w0va3d"
-path="res://.godot/imported/Eyes.png-442b55be3fb025775913bf0e28497a4e.ctex"
+uid="uid://ltuuu21msq7f"
+path="res://.godot/imported/juice.png-ea0ebe2eeb48631d5cdf620e3c338990.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/candy/Eyes.png"
-dest_files=["res://.godot/imported/Eyes.png-442b55be3fb025775913bf0e28497a4e.ctex"]
+source_file="res://Assets/Sprites/candy/juice.png"
+dest_files=["res://.godot/imported/juice.png-ea0ebe2eeb48631d5cdf620e3c338990.ctex"]
 
 [params]
 

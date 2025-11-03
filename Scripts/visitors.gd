@@ -7,8 +7,8 @@ extends Node
 @export var monsters: Array[PackedScene]
 @export var hidden_monsters: Array[PackedScene]
 
-@onready var door = $"../Door"
-@onready var look = $"../CanvasModulate"
+@onready var door = $"../Background/Door"
+@onready var brightness = $"../CanvasModulate"
 @onready var player = $"../Audio/Grumble"
 @onready var yipee = load("res://Assets/Sfx/yippee.mp3")
 
@@ -93,7 +93,7 @@ func done():
 	visitor_count += 1
 	visit.emit(visitor_count)
 	tween = create_tween()
-	tween.tween_property(look, "color", look.color*Color(0.95,0.95,0.95,1), 2)
+	tween.tween_property(brightness, "color", brightness.color*Color(0.95,0.95,0.95,1), 2)
 	mean = scale()
 	length = clamp(randfn(mean, deviation), mean - 4 * deviation, mean + 4 * deviation)
 	await get_tree().create_timer(length).timeout
@@ -101,5 +101,5 @@ func done():
 	spawn_visitor()
 	
 
-func _ready() -> void:
+func _ready():
 	spawn_visitor()

@@ -1,6 +1,6 @@
-[gd_scene load_steps=40 format=3 uid="uid://cxm1y0g8khuxs"]
+[gd_scene load_steps=41 format=3 uid="uid://cxm1y0g8khuxs"]
 
-[ext_resource type="SpriteFrames" uid="uid://dkufb37dq7glr" path="res://Scenes/Door.tres" id="1_c32x4"]
+[ext_resource type="SpriteFrames" uid="uid://dkufb37dq7glr" path="res://Assets/Tilemaps/door.tres" id="1_c32x4"]
 [ext_resource type="Script" uid="uid://bxu142txm31la" path="res://Scripts/door.gd" id="2_fg7i4"]
 [ext_resource type="Script" uid="uid://ctt35qcba1w8y" path="res://Scripts/visitors.gd" id="2_wjtap"]
 [ext_resource type="PackedScene" uid="uid://cruboyatfxt3p" path="res://Scenes/monsters/slime.tscn" id="3_c32x4"]
@@ -8,19 +8,19 @@
 [ext_resource type="PackedScene" uid="uid://dnsa577lq8pkm" path="res://Scenes/monsters/frank.tscn" id="4_fg7i4"]
 [ext_resource type="PackedScene" uid="uid://bs0wiq878owlr" path="res://Scenes/humans/cowboy.tscn" id="4_jiy1d"]
 [ext_resource type="AudioStream" uid="uid://37o1b4crojpd" path="res://Assets/Sfx/grumble_1.wav" id="4_x5e5l"]
-[ext_resource type="SpriteFrames" uid="uid://dq4qn6y7btexy" path="res://Scenes/fish.tres" id="5_2ooml"]
+[ext_resource type="SpriteFrames" uid="uid://dq4qn6y7btexy" path="res://Assets/Tilemaps/fish.tres" id="5_2ooml"]
 [ext_resource type="AudioStream" uid="uid://d3uacohx2jxx6" path="res://Assets/Sfx/grumble_2.wav" id="5_bwylj"]
 [ext_resource type="PackedScene" uid="uid://knmhmr1y4dfl" path="res://Scenes/monsters/bagman.tscn" id="5_gwne5"]
-[ext_resource type="SpriteFrames" uid="uid://d36lgc2itrt5g" path="res://Scenes/bar.tres" id="5_he4j0"]
+[ext_resource type="SpriteFrames" uid="uid://d36lgc2itrt5g" path="res://Assets/Tilemaps/bar.tres" id="5_he4j0"]
 [ext_resource type="PackedScene" uid="uid://b2w73htm43ass" path="res://Scenes/humans/ghost.tscn" id="5_ud1os"]
-[ext_resource type="SpriteFrames" uid="uid://2k3qceim6scv" path="res://Scenes/cookie.tres" id="6_85gyg"]
+[ext_resource type="SpriteFrames" uid="uid://2k3qceim6scv" path="res://Assets/Tilemaps/cookie.tres" id="6_85gyg"]
 [ext_resource type="PackedScene" uid="uid://bpdpyt6grpyr4" path="res://Scenes/humans/witch.tscn" id="6_fpmp2"]
 [ext_resource type="AudioStream" uid="uid://dwklhxv381kqs" path="res://Assets/Sfx/grumble_3.wav" id="6_opb2v"]
 [ext_resource type="Texture2D" uid="uid://y58rtd0uku02" path="res://Assets/Sprites/guide.png" id="6_tx0tn"]
 [ext_resource type="AudioStream" uid="uid://ilg4ow0mly68" path="res://Assets/Sfx/grumble_4.wav" id="7_mrm6q"]
 [ext_resource type="Script" uid="uid://b7jr2dbtnsa8d" path="res://Scripts/guide.gd" id="7_wjtap"]
 [ext_resource type="PackedScene" uid="uid://iuewd0smbntr" path="res://Scenes/monsters/skeleton.tscn" id="8_1nvmp"]
-[ext_resource type="SpriteFrames" uid="uid://cnrwc22l0dx7f" path="res://Scenes/mushroom.tres" id="8_85gyg"]
+[ext_resource type="SpriteFrames" uid="uid://cnrwc22l0dx7f" path="res://Assets/Tilemaps/mushroom.tres" id="8_85gyg"]
 [ext_resource type="AudioStream" uid="uid://bil1wyd5lhew2" path="res://Assets/Sfx/grumble__5.wav" id="8_ffkfv"]
 [ext_resource type="Script" uid="uid://dr5ysng0djau" path="res://Scripts/candy.gd" id="8_fg7i4"]
 [ext_resource type="PackedScene" uid="uid://rl8wsc00buyq" path="res://Scenes/monsters/cyclops.tscn" id="8_xiv05"]
@@ -28,25 +28,21 @@
 [ext_resource type="Texture2D" uid="uid://77yb0cfugvrc" path="res://Assets/Sprites/Bg/bg.png" id="11_he4j0"]
 [ext_resource type="Texture2D" uid="uid://bmerh5yk0lu1v" path="res://Assets/Sprites/Bg/fg.png" id="12_85gyg"]
 [ext_resource type="PackedScene" uid="uid://ce3sepq6i856v" path="res://Scenes/monsters/vampire.tscn" id="13_uh8xd"]
-[ext_resource type="SpriteFrames" uid="uid://b3b6glxvjc7qk" path="res://Scenes/Clock.tres" id="16_fg7i4"]
+[ext_resource type="SpriteFrames" uid="uid://b3b6glxvjc7qk" path="res://Assets/Tilemaps/clock.tres" id="16_fg7i4"]
 [ext_resource type="Script" uid="uid://ctose8nyl23kx" path="res://Scripts/clock.gd" id="17_gwne5"]
-[ext_resource type="SpriteFrames" uid="uid://bgap2cun5ovri" path="res://Scenes/juice.tres" id="17_ud1os"]
+[ext_resource type="SpriteFrames" uid="uid://bgap2cun5ovri" path="res://Assets/Tilemaps/juice.tres" id="17_ud1os"]
 [ext_resource type="PackedScene" uid="uid://cglh0o1ls408x" path="res://Scenes/hidden/cyclops_frank.tscn" id="19_pxds5"]
 [ext_resource type="PackedScene" uid="uid://c04kxa6jjhpam" path="res://Scenes/hidden/frank_vampire.tscn" id="20_5lvh4"]
 [ext_resource type="PackedScene" uid="uid://b22kfbibbky4e" path="res://Scenes/hidden/headlessman_1.tscn" id="21_0cehh"]
 [ext_resource type="PackedScene" uid="uid://d1xnrmhv1i551" path="res://Scenes/hidden/headlessman_2.tscn" id="22_he2d7"]
 [ext_resource type="PackedScene" uid="uid://fsbjop7beg4x" path="res://Scenes/hidden/skeleton_ghost.tscn" id="23_xjfqc"]
 [ext_resource type="PackedScene" uid="uid://birqgxcfjru4m" path="res://Scenes/hidden/slime_headless.tscn" id="24_ge5vp"]
-[ext_resource type="AudioStream" uid="uid://dqsyayfnxqysi" path="res://Assets/ambience.wav" id="32_bwylj"]
+[ext_resource type="AudioStream" uid="uid://dqsyayfnxqysi" path="res://Assets/Sfx/ambience.wav" id="32_bwylj"]
+[ext_resource type="Texture2D" uid="uid://bhtnqv2kj4gxr" path="res://Assets/Sprites/end_screen.png" id="39_5lvh4"]
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_85gyg"]
 
 [node name="Node2D" type="Node2D"]
-
-[node name="Door" type="AnimatedSprite2D" parent="."]
-position = Vector2(66, 95)
-sprite_frames = ExtResource("1_c32x4")
-script = ExtResource("2_fg7i4")
 
 [node name="GameController" type="Node" parent="."]
 script = ExtResource("2_wjtap")
@@ -69,10 +65,10 @@ candy = "Bar"
 texture = ExtResource("5_he4j0")
 
 [node name="Cookie" type="TextureButton" parent="Candy"]
-offset_left = 257.0
-offset_top = 2.0
-offset_right = 321.0
-offset_bottom = 34.0
+offset_left = 240.0
+offset_top = 152.0
+offset_right = 304.0
+offset_bottom = 184.0
 texture_normal = SubResource("AnimatedTexture_85gyg")
 script = ExtResource("8_fg7i4")
 initial_count = 3
@@ -80,10 +76,10 @@ candy = "Cookie"
 texture = ExtResource("6_85gyg")
 
 [node name="Juice" type="TextureButton" parent="Candy"]
-offset_left = 201.0
-offset_top = 148.0
-offset_right = 265.0
-offset_bottom = 180.0
+offset_left = 159.0
+offset_top = 140.0
+offset_right = 223.0
+offset_bottom = 172.0
 texture_normal = SubResource("AnimatedTexture_85gyg")
 script = ExtResource("8_fg7i4")
 initial_count = 4
@@ -131,25 +127,15 @@ position = Vector2(160, 90)
 texture = ExtResource("12_85gyg")
 metadata/_edit_lock_ = true
 
-[node name="Guide" type="TextureButton" parent="."]
-z_index = 1
-offset_left = 300.0
-offset_right = 470.0
-offset_bottom = 300.0
-texture_normal = ExtResource("6_tx0tn")
-script = ExtResource("7_wjtap")
-closed = Vector2(302, 0)
-open = Vector2(200, 0)
-speed = 0.2
-
-[node name="Clock" type="AnimatedSprite2D" parent="."]
+[node name="Clock" type="AnimatedSprite2D" parent="Background"]
 position = Vector2(286.5, 130.5)
 sprite_frames = ExtResource("16_fg7i4")
 script = ExtResource("17_gwne5")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-position = Vector2(74, 70)
-color = Color(0.8127451, 0.82219875, 0.7974085, 1)
+[node name="Door" type="AnimatedSprite2D" parent="Background"]
+position = Vector2(66, 95)
+sprite_frames = ExtResource("1_c32x4")
+script = ExtResource("2_fg7i4")
 
 [node name="Audio" type="Node" parent="."]
 
@@ -161,8 +147,41 @@ color = Color(0.8127451, 0.82219875, 0.7974085, 1)
 stream = ExtResource("32_bwylj")
 autoplay = true
 
-[connection signal="door_state" from="GameController" to="Door" method="door_state"]
-[connection signal="visit" from="GameController" to="Clock" method="_update"]
+[node name="Guide" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 164.0
+offset_top = 162.0
+offset_right = 334.0
+offset_bottom = 462.0
+texture_normal = ExtResource("6_tx0tn")
+script = ExtResource("7_wjtap")
+speed = 0.2
+closed = Vector2(164, 162)
+open = Vector2(164, 0)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2(74, 70)
+color = Color(0.8127451, 0.82219875, 0.7974085, 1)
+
+[node name="End" type="TextureRect" parent="."]
+visible = false
+z_index = 1
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("39_5lvh4")
+
+[node name="Score" type="RichTextLabel" parent="End"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 72.0
+offset_right = 240.0
+offset_bottom = 104.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 32
+fit_content = true
+
+[connection signal="door_state" from="GameController" to="Background/Door" method="door_state"]
+[connection signal="visit" from="GameController" to="Background/Clock" method="_update"]
 [connection signal="press" from="Candy/Bar" to="GameController" method="button_pressed"]
 [connection signal="pressed" from="Candy/Bar" to="Candy/Bar" method="_on_pressed"]
 [connection signal="press" from="Candy/Cookie" to="GameController" method="button_pressed"]
