@@ -6,6 +6,8 @@ extends Node
 @export var door: Sprite2D
 @export var visitors: Array[PackedScene]
 
+signal visit(count)
+
 var timeout
 var current_visitor
 var tween: Tween
@@ -46,11 +48,11 @@ func button_pressed(candy: String):
 		print("good")
 	else:
 		print("bad")
-
+	timeout = true
 	door.set_visible(true)
 	remove_child(current_visitor)
 	visitor_count += 1
-	timeout = true
+	visit.emit(visitor_count)
 	mean = scale()
 	length = clamp(randfn(mean, deviation), mean - 4 * deviation, mean + 4 * deviation)
 	await get_tree().create_timer(length).timeout

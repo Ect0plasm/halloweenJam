@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cxm1y0g8khuxs"]
+[gd_scene load_steps=17 format=3 uid="uid://cxm1y0g8khuxs"]
 
 [ext_resource type="Texture2D" uid="uid://df7rpf2igpur1" path="res://Assets/Sprites/Bg/DoorClosed.png" id="1_p20hg"]
 [ext_resource type="Script" uid="uid://ctt35qcba1w8y" path="res://Scripts/visitors.gd" id="2_wjtap"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://77yb0cfugvrc" path="res://Assets/Sprites/Bg/bg.png" id="11_he4j0"]
 [ext_resource type="Texture2D" uid="uid://bmerh5yk0lu1v" path="res://Assets/Sprites/Bg/fg.png" id="12_85gyg"]
 [ext_resource type="Texture2D" uid="uid://dl3e45uyla41f" path="res://Assets/Sprites/candy/skull.png" id="12_c32x4"]
+[ext_resource type="SpriteFrames" uid="uid://b3b6glxvjc7qk" path="res://Scenes/Clock.tres" id="16_fg7i4"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -66,10 +67,10 @@ offset_bottom = 190.0
 texture_normal = ExtResource("4_chwn1")
 
 [node name="Skull" type="TextureButton" parent="Candy"]
-offset_left = 235.0
-offset_top = 134.0
-offset_right = 308.0
-offset_bottom = 224.0
+offset_left = 241.0
+offset_top = 129.0
+offset_right = 314.0
+offset_bottom = 219.0
 texture_normal = ExtResource("12_c32x4")
 
 [node name="Background" type="Node" parent="."]
@@ -96,6 +97,13 @@ script = ExtResource("7_wjtap")
 closed = Vector2(302, 0)
 open = Vector2(200, 0)
 speed = 0.2
+
+[node name="Door" type="AnimatedSprite2D" parent="."]
+position = Vector2(66, 95)
+
+[node name="Clock" type="AnimatedSprite2D" parent="."]
+position = Vector2(286.5, 130.5)
+sprite_frames = ExtResource("16_fg7i4")
 
 [connection signal="pressed" from="Candy/Bar" to="GameController" method="button_pressed" binds= ["Fish"]]
 [connection signal="pressed" from="Candy/Cookie" to="GameController" method="button_pressed" binds= ["Cookie"]]

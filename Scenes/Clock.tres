@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://b3b6glxvjc7qk"]
+
+[ext_resource type="Texture2D" uid="uid://btdka54a86tsk" path="res://Assets/Sprites/Bg/clock.png" id="1_leuc8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4jxp"]
+atlas = ExtResource("1_leuc8")
+region = Rect2(0, 0, 29, 15)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4jxp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
