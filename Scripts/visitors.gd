@@ -3,10 +3,11 @@ extends Node
 @export var initial_position: Vector2
 
 @export_category("Nodes")
-@export var door: Sprite2D
+@onready var door = $"../Door"
 @export var visitors: Array[PackedScene]
 
-signal visit(count)
+signal visit(count: int)
+signal door_state(state: bool)
 
 var timeout
 var current_visitor
@@ -35,8 +36,8 @@ func spawn_visitor():
 	add_child(current_visitor)
 	tween = create_tween()
 	tween.tween_property(current_visitor, "position", door.position, 0.5*scale())
-	await get_tree().create_timer(0.5*scale()-0.2).timeout
-	door.set_visible(false)
+	await get_tree().create_timer(0.5*scale()-0.8).timeout
+	door_state.emit(true)
 	timeout = false
 
 
@@ -49,7 +50,7 @@ func button_pressed(candy: String):
 	else:
 		print("bad")
 	timeout = true
-	door.set_visible(true)
+	door_state.emit(false)
 	remove_child(current_visitor)
 	visitor_count += 1
 	visit.emit(visitor_count)

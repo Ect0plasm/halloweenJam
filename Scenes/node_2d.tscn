@@ -1,32 +1,35 @@
-[gd_scene load_steps=17 format=3 uid="uid://cxm1y0g8khuxs"]
+[gd_scene load_steps=19 format=3 uid="uid://cxm1y0g8khuxs"]
 
-[ext_resource type="Texture2D" uid="uid://df7rpf2igpur1" path="res://Assets/Sprites/Bg/DoorClosed.png" id="1_p20hg"]
+[ext_resource type="SpriteFrames" uid="uid://dkufb37dq7glr" path="res://Scenes/Door.tres" id="1_c32x4"]
+[ext_resource type="Script" uid="uid://bxu142txm31la" path="res://Scripts/door.gd" id="2_fg7i4"]
 [ext_resource type="Script" uid="uid://ctt35qcba1w8y" path="res://Scripts/visitors.gd" id="2_wjtap"]
 [ext_resource type="PackedScene" uid="uid://cruboyatfxt3p" path="res://Scenes/Presets/deep.tscn" id="3_c32x4"]
 [ext_resource type="Texture2D" uid="uid://d2xhvdsq4bclk" path="res://Assets/Sprites/candy/corn.png" id="3_v7gqg"]
-[ext_resource type="Texture2D" uid="uid://cjakgfkbnmqqa" path="res://Assets/Sprites/candy/fungus.png" id="4_chwn1"]
 [ext_resource type="PackedScene" uid="uid://dnsa577lq8pkm" path="res://Scenes/Presets/ogre.tscn" id="4_fg7i4"]
 [ext_resource type="PackedScene" uid="uid://knmhmr1y4dfl" path="res://Scenes/Presets/basajaun.tscn" id="5_gwne5"]
 [ext_resource type="Texture2D" uid="uid://y58rtd0uku02" path="res://Assets/Sprites/guide.png" id="6_tx0tn"]
 [ext_resource type="Texture2D" uid="uid://djt33rvsfhamr" path="res://Assets/Sprites/candy/bar.png" id="7_p20hg"]
 [ext_resource type="Script" uid="uid://b7jr2dbtnsa8d" path="res://Scripts/guide.gd" id="7_wjtap"]
-[ext_resource type="Texture2D" uid="uid://vsoc01aohi75" path="res://Assets/Sprites/candy/cookie.png" id="8_he4j0"]
+[ext_resource type="Script" uid="uid://v48w6c5gchjp" path="res://Scripts/fungus.gd" id="9_c32x4"]
 [ext_resource type="Texture2D" uid="uid://c1y8l2dy06068" path="res://Assets/Sprites/candy/fish.png" id="10_85gyg"]
 [ext_resource type="Texture2D" uid="uid://77yb0cfugvrc" path="res://Assets/Sprites/Bg/bg.png" id="11_he4j0"]
 [ext_resource type="Texture2D" uid="uid://bmerh5yk0lu1v" path="res://Assets/Sprites/Bg/fg.png" id="12_85gyg"]
 [ext_resource type="Texture2D" uid="uid://dl3e45uyla41f" path="res://Assets/Sprites/candy/skull.png" id="12_c32x4"]
 [ext_resource type="SpriteFrames" uid="uid://b3b6glxvjc7qk" path="res://Scenes/Clock.tres" id="16_fg7i4"]
+[ext_resource type="Script" uid="uid://ctose8nyl23kx" path="res://Scripts/clock.gd" id="17_gwne5"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_85gyg"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="CloseDoor" type="Sprite2D" parent="."]
+[node name="Door" type="AnimatedSprite2D" parent="."]
 position = Vector2(66, 95)
-texture = ExtResource("1_p20hg")
+sprite_frames = ExtResource("1_c32x4")
+script = ExtResource("2_fg7i4")
 
-[node name="GameController" type="Node" parent="." node_paths=PackedStringArray("door")]
+[node name="GameController" type="Node" parent="."]
 script = ExtResource("2_wjtap")
 initial_position = Vector2(320, 95)
-door = NodePath("../CloseDoor")
 visitors = Array[PackedScene]([ExtResource("3_c32x4"), ExtResource("4_fg7i4"), ExtResource("5_gwne5")])
 
 [node name="Candy" type="Node" parent="."]
@@ -43,7 +46,7 @@ offset_left = 257.0
 offset_top = -27.0
 offset_right = 321.0
 offset_bottom = 47.0
-texture_normal = ExtResource("8_he4j0")
+texture_normal = SubResource("AnimatedTexture_85gyg")
 
 [node name="Corn" type="TextureButton" parent="Candy"]
 offset_left = 150.0
@@ -60,11 +63,11 @@ offset_bottom = 118.0
 texture_normal = ExtResource("10_85gyg")
 
 [node name="Fungus" type="TextureButton" parent="Candy"]
-offset_left = 149.0
-offset_top = 133.0
-offset_right = 213.0
-offset_bottom = 190.0
-texture_normal = ExtResource("4_chwn1")
+offset_left = 209.0
+offset_top = 112.0
+offset_right = 273.0
+offset_bottom = 144.0
+script = ExtResource("9_c32x4")
 
 [node name="Skull" type="TextureButton" parent="Candy"]
 offset_left = 241.0
@@ -98,17 +101,18 @@ closed = Vector2(302, 0)
 open = Vector2(200, 0)
 speed = 0.2
 
-[node name="Door" type="AnimatedSprite2D" parent="."]
-position = Vector2(66, 95)
-
 [node name="Clock" type="AnimatedSprite2D" parent="."]
 position = Vector2(286.5, 130.5)
 sprite_frames = ExtResource("16_fg7i4")
+script = ExtResource("17_gwne5")
 
+[connection signal="door_state" from="GameController" to="Door" method="door_state"]
+[connection signal="visit" from="GameController" to="Clock" method="_update"]
 [connection signal="pressed" from="Candy/Bar" to="GameController" method="button_pressed" binds= ["Fish"]]
 [connection signal="pressed" from="Candy/Cookie" to="GameController" method="button_pressed" binds= ["Cookie"]]
 [connection signal="pressed" from="Candy/Corn" to="GameController" method="button_pressed" binds= ["Corn"]]
 [connection signal="pressed" from="Candy/Fish" to="GameController" method="button_pressed" binds= ["Fish"]]
-[connection signal="pressed" from="Candy/Fungus" to="GameController" method="button_pressed" binds= ["Fungus"]]
+[connection signal="press" from="Candy/Fungus" to="GameController" method="button_pressed"]
+[connection signal="pressed" from="Candy/Fungus" to="Candy/Fungus" method="_on_pressed"]
 [connection signal="pressed" from="Candy/Skull" to="GameController" method="button_pressed" binds= ["Skull"]]
 [connection signal="pressed" from="Guide" to="Guide" method="_on_pressed"]

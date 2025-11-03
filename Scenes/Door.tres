@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://dkufb37dq7glr"]
+
+[ext_resource type="Texture2D" uid="uid://tyi0wtrfq378" path="res://Assets/Sprites/Bg/DoorClosed-sheet.png" id="1_yrucb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0hpp"]
+atlas = ExtResource("1_yrucb")
+region = Rect2(0, 0, 114, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uyq5w"]
+atlas = ExtResource("1_yrucb")
+region = Rect2(114, 0, 114, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5w5m"]
+atlas = ExtResource("1_yrucb")
+region = Rect2(228, 0, 114, 170)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0hpp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uyq5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5w5m")
+}],
+"loop": false,
+"name": &"default",
+"speed": 6.0
+}]
