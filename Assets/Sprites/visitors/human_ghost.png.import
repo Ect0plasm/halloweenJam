@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjakgfkbnmqqa"
-path="res://.godot/imported/fungus.png-0be29fb0effb288efb6b378691aecfbf.ctex"
+uid="uid://djc7ob61fho5l"
+path="res://.godot/imported/human_ghost.png-4905a59954ff96bfdd6eec8f97830416.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/candy/fungus.png"
-dest_files=["res://.godot/imported/fungus.png-0be29fb0effb288efb6b378691aecfbf.ctex"]
+source_file="res://Assets/Sprites/visitors/human_ghost.png"
+dest_files=["res://.godot/imported/human_ghost.png-4905a59954ff96bfdd6eec8f97830416.ctex"]
 
 [params]
 

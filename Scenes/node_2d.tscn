@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cxm1y0g8khuxs"]
+[gd_scene load_steps=22 format=3 uid="uid://cxm1y0g8khuxs"]
 
 [ext_resource type="SpriteFrames" uid="uid://dkufb37dq7glr" path="res://Scenes/Door.tres" id="1_c32x4"]
 [ext_resource type="Script" uid="uid://bxu142txm31la" path="res://Scripts/door.gd" id="2_fg7i4"]
@@ -15,10 +15,18 @@
 [ext_resource type="Texture2D" uid="uid://77yb0cfugvrc" path="res://Assets/Sprites/Bg/bg.png" id="11_he4j0"]
 [ext_resource type="Texture2D" uid="uid://bmerh5yk0lu1v" path="res://Assets/Sprites/Bg/fg.png" id="12_85gyg"]
 [ext_resource type="Texture2D" uid="uid://dl3e45uyla41f" path="res://Assets/Sprites/candy/skull.png" id="12_c32x4"]
+[ext_resource type="Texture2D" uid="uid://brn3nv5c4jp3o" path="res://Assets/Sprites/Bg/fg_normal.png" id="14_hpu6p"]
 [ext_resource type="SpriteFrames" uid="uid://b3b6glxvjc7qk" path="res://Scenes/Clock.tres" id="16_fg7i4"]
 [ext_resource type="Script" uid="uid://ctose8nyl23kx" path="res://Scripts/clock.gd" id="17_gwne5"]
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_85gyg"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_hpu6p"]
+diffuse_texture = ExtResource("11_he4j0")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_op2xg"]
+diffuse_texture = ExtResource("12_85gyg")
+normal_texture = ExtResource("14_hpu6p")
 
 [node name="Node2D" type="Node2D"]
 
@@ -70,6 +78,7 @@ offset_bottom = 144.0
 script = ExtResource("9_c32x4")
 
 [node name="Skull" type="TextureButton" parent="Candy"]
+visible = false
 offset_left = 241.0
 offset_top = 129.0
 offset_right = 314.0
@@ -81,13 +90,13 @@ texture_normal = ExtResource("12_c32x4")
 [node name="bg" type="Sprite2D" parent="Background"]
 z_index = -100
 position = Vector2(160, 90)
-texture = ExtResource("11_he4j0")
+texture = SubResource("CanvasTexture_hpu6p")
 metadata/_edit_lock_ = true
 
 [node name="fg" type="Sprite2D" parent="Background"]
 z_index = -50
 position = Vector2(160, 90)
-texture = ExtResource("12_85gyg")
+texture = SubResource("CanvasTexture_op2xg")
 metadata/_edit_lock_ = true
 
 [node name="Guide" type="TextureButton" parent="."]
@@ -105,6 +114,10 @@ speed = 0.2
 position = Vector2(286.5, 130.5)
 sprite_frames = ExtResource("16_fg7i4")
 script = ExtResource("17_gwne5")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2(74, 70)
+color = Color(0.54554445, 0.5601218, 0.52142555, 1)
 
 [connection signal="door_state" from="GameController" to="Door" method="door_state"]
 [connection signal="visit" from="GameController" to="Clock" method="_update"]

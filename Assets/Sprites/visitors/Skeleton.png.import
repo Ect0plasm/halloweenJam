@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vsoc01aohi75"
-path="res://.godot/imported/cookie.png-3878a32171844ee4e924d0090b9a4fe6.ctex"
+uid="uid://dql6fjxy16y2h"
+path="res://.godot/imported/Skeleton.png-a8c9162b2afcaad864da973a5b7af780.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/candy/cookie.png"
-dest_files=["res://.godot/imported/cookie.png-3878a32171844ee4e924d0090b9a4fe6.ctex"]
+source_file="res://Assets/Sprites/visitors/Skeleton.png"
+dest_files=["res://.godot/imported/Skeleton.png-a8c9162b2afcaad864da973a5b7af780.ctex"]
 
 [params]
 
