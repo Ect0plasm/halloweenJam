@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://bgap2cun5ovri"]
+
+[ext_resource type="Texture2D" uid="uid://bxio4tnanstwy" path="res://Assets/Sprites/candy/Juice.png" id="1_dempc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dempc"]
+atlas = ExtResource("1_dempc")
+region = Rect2(184, 0, 46, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1psn7"]
+atlas = ExtResource("1_dempc")
+region = Rect2(138, 0, 46, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hii8t"]
+atlas = ExtResource("1_dempc")
+region = Rect2(92, 0, 46, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c3m24"]
+atlas = ExtResource("1_dempc")
+region = Rect2(46, 0, 46, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2gvn"]
+atlas = ExtResource("1_dempc")
+region = Rect2(0, 0, 46, 35)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dempc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1psn7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hii8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c3m24")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x2gvn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b22kfbibbky4e"]
+
+[ext_resource type="Texture2D" uid="uid://dgqh3d3n0l4f2" path="res://Assets/Sprites/visitors/headlessman_1.png" id="1_f0rnp"]
+[ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scripts/visitorProperties.gd" id="2_dat5x"]
+
+[node name="headlessman_1" type="Sprite2D"]
+texture = ExtResource("1_f0rnp")
+script = ExtResource("2_dat5x")
+desired_candy = Array[String](["Bar"])

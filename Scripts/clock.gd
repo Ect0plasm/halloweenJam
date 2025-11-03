@@ -2,7 +2,7 @@ extends AnimatedSprite2D
 
 func _update(value: int):
 	if value > 20:
-		print($"GameControler".score)
+		print($"../GameController".score)
 	if value > 12:
 		frame = 3
 		return

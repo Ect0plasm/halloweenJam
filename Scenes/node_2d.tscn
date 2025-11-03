@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://cxm1y0g8khuxs"]
+[gd_scene load_steps=40 format=3 uid="uid://cxm1y0g8khuxs"]
 
 [ext_resource type="SpriteFrames" uid="uid://dkufb37dq7glr" path="res://Scenes/Door.tres" id="1_c32x4"]
 [ext_resource type="Script" uid="uid://bxu142txm31la" path="res://Scripts/door.gd" id="2_fg7i4"]
@@ -7,16 +7,21 @@
 [ext_resource type="Texture2D" uid="uid://d2xhvdsq4bclk" path="res://Assets/Sprites/candy/corn.png" id="3_v7gqg"]
 [ext_resource type="PackedScene" uid="uid://dnsa577lq8pkm" path="res://Scenes/monsters/frank.tscn" id="4_fg7i4"]
 [ext_resource type="PackedScene" uid="uid://bs0wiq878owlr" path="res://Scenes/humans/cowboy.tscn" id="4_jiy1d"]
+[ext_resource type="AudioStream" uid="uid://37o1b4crojpd" path="res://Assets/Sfx/grumble_1.wav" id="4_x5e5l"]
 [ext_resource type="SpriteFrames" uid="uid://dq4qn6y7btexy" path="res://Scenes/fish.tres" id="5_2ooml"]
+[ext_resource type="AudioStream" uid="uid://d3uacohx2jxx6" path="res://Assets/Sfx/grumble_2.wav" id="5_bwylj"]
 [ext_resource type="PackedScene" uid="uid://knmhmr1y4dfl" path="res://Scenes/monsters/bagman.tscn" id="5_gwne5"]
 [ext_resource type="SpriteFrames" uid="uid://d36lgc2itrt5g" path="res://Scenes/bar.tres" id="5_he4j0"]
 [ext_resource type="PackedScene" uid="uid://b2w73htm43ass" path="res://Scenes/humans/ghost.tscn" id="5_ud1os"]
 [ext_resource type="SpriteFrames" uid="uid://2k3qceim6scv" path="res://Scenes/cookie.tres" id="6_85gyg"]
 [ext_resource type="PackedScene" uid="uid://bpdpyt6grpyr4" path="res://Scenes/humans/witch.tscn" id="6_fpmp2"]
+[ext_resource type="AudioStream" uid="uid://dwklhxv381kqs" path="res://Assets/Sfx/grumble_3.wav" id="6_opb2v"]
 [ext_resource type="Texture2D" uid="uid://y58rtd0uku02" path="res://Assets/Sprites/guide.png" id="6_tx0tn"]
+[ext_resource type="AudioStream" uid="uid://ilg4ow0mly68" path="res://Assets/Sfx/grumble_4.wav" id="7_mrm6q"]
 [ext_resource type="Script" uid="uid://b7jr2dbtnsa8d" path="res://Scripts/guide.gd" id="7_wjtap"]
 [ext_resource type="PackedScene" uid="uid://iuewd0smbntr" path="res://Scenes/monsters/skeleton.tscn" id="8_1nvmp"]
 [ext_resource type="SpriteFrames" uid="uid://cnrwc22l0dx7f" path="res://Scenes/mushroom.tres" id="8_85gyg"]
+[ext_resource type="AudioStream" uid="uid://bil1wyd5lhew2" path="res://Assets/Sfx/grumble__5.wav" id="8_ffkfv"]
 [ext_resource type="Script" uid="uid://dr5ysng0djau" path="res://Scripts/candy.gd" id="8_fg7i4"]
 [ext_resource type="PackedScene" uid="uid://rl8wsc00buyq" path="res://Scenes/monsters/cyclops.tscn" id="8_xiv05"]
 [ext_resource type="PackedScene" uid="uid://pgam4w6maiou" path="res://Scenes/monsters/headlessman.tscn" id="10_uybdb"]
@@ -25,6 +30,14 @@
 [ext_resource type="PackedScene" uid="uid://ce3sepq6i856v" path="res://Scenes/monsters/vampire.tscn" id="13_uh8xd"]
 [ext_resource type="SpriteFrames" uid="uid://b3b6glxvjc7qk" path="res://Scenes/Clock.tres" id="16_fg7i4"]
 [ext_resource type="Script" uid="uid://ctose8nyl23kx" path="res://Scripts/clock.gd" id="17_gwne5"]
+[ext_resource type="SpriteFrames" uid="uid://bgap2cun5ovri" path="res://Scenes/juice.tres" id="17_ud1os"]
+[ext_resource type="PackedScene" uid="uid://cglh0o1ls408x" path="res://Scenes/hidden/cyclops_frank.tscn" id="19_pxds5"]
+[ext_resource type="PackedScene" uid="uid://c04kxa6jjhpam" path="res://Scenes/hidden/frank_vampire.tscn" id="20_5lvh4"]
+[ext_resource type="PackedScene" uid="uid://b22kfbibbky4e" path="res://Scenes/hidden/headlessman_1.tscn" id="21_0cehh"]
+[ext_resource type="PackedScene" uid="uid://d1xnrmhv1i551" path="res://Scenes/hidden/headlessman_2.tscn" id="22_he2d7"]
+[ext_resource type="PackedScene" uid="uid://fsbjop7beg4x" path="res://Scenes/hidden/skeleton_ghost.tscn" id="23_xjfqc"]
+[ext_resource type="PackedScene" uid="uid://birqgxcfjru4m" path="res://Scenes/hidden/slime_headless.tscn" id="24_ge5vp"]
+[ext_resource type="AudioStream" uid="uid://dqsyayfnxqysi" path="res://Assets/ambience.wav" id="32_bwylj"]
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_85gyg"]
 
@@ -38,8 +51,10 @@ script = ExtResource("2_fg7i4")
 [node name="GameController" type="Node" parent="."]
 script = ExtResource("2_wjtap")
 initial_position = Vector2(320, 95)
+grumble = Array[AudioStream]([ExtResource("4_x5e5l"), ExtResource("5_bwylj"), ExtResource("6_opb2v"), ExtResource("7_mrm6q"), ExtResource("8_ffkfv")])
 humans = Array[PackedScene]([ExtResource("4_jiy1d"), ExtResource("5_ud1os"), ExtResource("6_fpmp2")])
 monsters = Array[PackedScene]([ExtResource("5_gwne5"), ExtResource("8_xiv05"), ExtResource("4_fg7i4"), ExtResource("10_uybdb"), ExtResource("8_1nvmp"), ExtResource("3_c32x4"), ExtResource("13_uh8xd")])
+hidden_monsters = Array[PackedScene]([ExtResource("19_pxds5"), ExtResource("20_5lvh4"), ExtResource("21_0cehh"), ExtResource("22_he2d7"), ExtResource("23_xjfqc"), ExtResource("24_ge5vp")])
 
 [node name="Candy" type="Node" parent="."]
 
@@ -55,14 +70,25 @@ texture = ExtResource("5_he4j0")
 
 [node name="Cookie" type="TextureButton" parent="Candy"]
 offset_left = 257.0
-offset_top = -27.0
+offset_top = 2.0
 offset_right = 321.0
-offset_bottom = 5.0
+offset_bottom = 34.0
 texture_normal = SubResource("AnimatedTexture_85gyg")
 script = ExtResource("8_fg7i4")
 initial_count = 3
 candy = "Cookie"
 texture = ExtResource("6_85gyg")
+
+[node name="Juice" type="TextureButton" parent="Candy"]
+offset_left = 201.0
+offset_top = 148.0
+offset_right = 265.0
+offset_bottom = 180.0
+texture_normal = SubResource("AnimatedTexture_85gyg")
+script = ExtResource("8_fg7i4")
+initial_count = 4
+candy = "Juice"
+texture = ExtResource("17_ud1os")
 
 [node name="Corn" type="TextureButton" parent="Candy"]
 offset_left = 130.0
@@ -123,13 +149,26 @@ script = ExtResource("17_gwne5")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 position = Vector2(74, 70)
-color = Color(0.54554445, 0.5601218, 0.52142555, 1)
+color = Color(0.8127451, 0.82219875, 0.7974085, 1)
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="Grumble" type="AudioStreamPlayer" parent="Audio"]
+
+[node name="Door" type="AudioStreamPlayer" parent="Audio"]
+
+[node name="Ambiance" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource("32_bwylj")
+autoplay = true
 
 [connection signal="door_state" from="GameController" to="Door" method="door_state"]
 [connection signal="visit" from="GameController" to="Clock" method="_update"]
 [connection signal="press" from="Candy/Bar" to="GameController" method="button_pressed"]
 [connection signal="pressed" from="Candy/Bar" to="Candy/Bar" method="_on_pressed"]
-[connection signal="pressed" from="Candy/Cookie" to="GameController" method="button_pressed" binds= ["Cookie"]]
+[connection signal="press" from="Candy/Cookie" to="GameController" method="button_pressed"]
+[connection signal="pressed" from="Candy/Cookie" to="Candy/Cookie" method="_on_pressed"]
+[connection signal="press" from="Candy/Juice" to="GameController" method="button_pressed"]
+[connection signal="pressed" from="Candy/Juice" to="Candy/Juice" method="_on_pressed"]
 [connection signal="pressed" from="Candy/Corn" to="GameController" method="button_pressed" binds= ["Corn"]]
 [connection signal="press" from="Candy/Fish" to="GameController" method="button_pressed"]
 [connection signal="pressed" from="Candy/Fish" to="Candy/Fish" method="_on_pressed"]

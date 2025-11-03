@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db4wsb2p0id68"
-path="res://.godot/imported/Headlessman.png-4aa8b9f53e1987133bfc82b1fc7a6c2f.ctex"
+uid="uid://bxio4tnanstwy"
+path="res://.godot/imported/Juice.png-7c8c9cc3ffe850381dd9ad46ba4c5505.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/visitors/Headlessman.png"
-dest_files=["res://.godot/imported/Headlessman.png-4aa8b9f53e1987133bfc82b1fc7a6c2f.ctex"]
+source_file="res://Assets/Sprites/candy/Juice.png"
+dest_files=["res://.godot/imported/Juice.png-7c8c9cc3ffe850381dd9ad46ba4c5505.ctex"]
 
 [params]
 
