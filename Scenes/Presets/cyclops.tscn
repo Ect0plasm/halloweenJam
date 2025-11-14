@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://pgam4w6maiou"]
-
-[ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scripts/visitorProperties.gd" id="1_agryx"]
-[ext_resource type="Texture2D" uid="uid://b5whajmxusypd" path="res://Assets/Sprites/cyclops.png" id="1_inkqd"]
-
-[node name="cyclops" type="Sprite2D"]
-texture = ExtResource("1_inkqd")
-script = ExtResource("1_agryx")
-desired_candy = "Cookie"

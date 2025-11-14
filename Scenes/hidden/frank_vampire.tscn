@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c04kxa6jjhpam"]
+
+[ext_resource type="Texture2D" uid="uid://n27gbnghgo7t" path="res://Assets/Sprites/visitors/frank_vampire.png" id="1_7jawe"]
+[ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scripts/visitorProperties.gd" id="2_pft4m"]
+
+[node name="frank_vampire" type="Sprite2D"]
+texture = ExtResource("1_7jawe")
+script = ExtResource("2_pft4m")
+desired_candy = Array[String](["Corn", "Fish"])

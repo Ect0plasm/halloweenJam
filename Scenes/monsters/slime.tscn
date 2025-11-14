@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cruboyatfxt3p"]
+
+[ext_resource type="Texture2D" uid="uid://p1cvkwgq17ru" path="res://Assets/Sprites/visitors/slime.png" id="1_c7fhb"]
+[ext_resource type="Script" uid="uid://dvvaac0o8ak6j" path="res://Scripts/visitorProperties.gd" id="1_gxyw5"]
+
+[node name="slime" type="Sprite2D"]
+texture = ExtResource("1_c7fhb")
+script = ExtResource("1_gxyw5")
+desired_candy = Array[String](["Fish", "Fungus"])

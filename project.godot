@@ -13,6 +13,7 @@ config_version=5
 config/name="Halloween"
 run/main_scene="uid://cxm1y0g8khuxs"
 config/features=PackedStringArray("4.5", "Forward Plus")
+boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [display]
@@ -23,6 +24,12 @@ window/size/window_width_override=1152
 window/size/window_height_override=648
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
+
+[gui]
+
+theme/default_font_antialiasing=0
+theme/default_font_hinting=0
+theme/custom_font="uid://soi8dd7mam3j"
 
 [rendering]
 
